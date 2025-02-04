@@ -51,7 +51,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('fundo.webp'); /* Substitua pelo caminho da sua imagem */
+    background-image: url('images/planoFundo.webp'); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* A imagem se ajusta dentro do header */
     background-position: center;
     background-attachment: fixed; /* Efeito de paralaxe */
