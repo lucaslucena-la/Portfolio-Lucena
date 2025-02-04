@@ -16,7 +16,7 @@ body {
 
 nav {
     background-color: #222;
-    position:absolute;
+    position:fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -26,12 +26,13 @@ nav {
 
 .menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     list-style: none;
 }
 
 .menu li {
     margin: 0 20px;
+    
 }
 
 .menu li a {
@@ -87,7 +88,7 @@ header {
 
 
 .image-section {
-    width: 40%;
+    width: 35%;
     position: relative; /* Permite o posicionamento do pseudo-elemento */
     margin-right: 60px;
     
@@ -108,6 +109,23 @@ header {
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
+
+    header {
+        height: auto;
+        padding: 65px 0;
+    }
+
+    .perfil{
+        margin-left: 45px;
+        
+    }
+
+    .about-section{
+        justify-content: center;
+        
+    }
+
+
     .header-content {
         flex-direction: column;
         text-align: center;
@@ -137,6 +155,7 @@ header {
         height: auto;
         margin: 0 auto; /* Centraliza a imagem */
         border-radius: 50%; /* Mantém o estilo arredondado */
+        transform: translateY(-20px); /* Move a imagem 10px para cima */
     }
 
     .skills {
@@ -146,6 +165,7 @@ header {
     .skill-item {
         align-items: center;
     }
+
 
 }
 
@@ -193,6 +213,7 @@ main {
 
 #about{
     background-color: #333;
+    padding-top: 50px;
 }
 
 .about-section {
@@ -201,6 +222,7 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    padding-top: 60px; 
 }
 
 .about-section img {
