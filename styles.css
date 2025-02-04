@@ -110,7 +110,8 @@ header {
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
 
-    header {
+    header {    
+        height: 100vh;
         height: auto;
         padding: 65px 0;
     }
