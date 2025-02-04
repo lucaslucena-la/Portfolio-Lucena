@@ -113,6 +113,10 @@ header {
         text-align: center;
     }
 
+    .menu li a {
+        font-size: 0.8rem; /* Diminui o tamanho da fonte do menu */
+    }
+
     .text-section, .image-section {
         width: 100%;
     }
