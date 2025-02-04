@@ -112,7 +112,6 @@ header {
 
     header {    
         height: 100vh;
-        height: auto;
         padding: 65px 0;
         width: 100%;
     }
