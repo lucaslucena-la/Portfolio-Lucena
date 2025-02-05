@@ -9,6 +9,7 @@ body {
     color: #fff;
     background-color: #333;
     line-height: 1.6;
+    margin-top: 48px; /* Adjust this value based on the height of your nav */
 }
 
 /* Menu de navegação */
@@ -28,6 +29,9 @@ nav {
     display: flex;
     justify-content: center;
     list-style: none;
+    float: right;
+
+
 }
 
 .menu li {
@@ -46,17 +50,36 @@ nav {
     color: #f5a623;
 }
 
-header {
+#home {
     position: relative;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('images/planoFundo.webp'); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* A imagem se ajusta dentro do header */
     background-position: center;
     background-attachment: fixed; /* Efeito de paralaxe */
     background-repeat: no-repeat;
+}
+
+#home-contact {
+    position: relative;
+    height: 30vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; /* A imagem se ajusta dentro do header */
+    background-position: center;
+    background-attachment: fixed; /* Efeito de paralaxe */
+    background-repeat: no-repeat;
+    
+
+}
+
+.container-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .background-overlay {
@@ -336,6 +359,13 @@ main {
     background-color: #282828;
     padding: 50px 0;
 }
+
+.service h3 {
+    color: #f5a623;
+    margin-bottom: 3%;
+}
+
+
 
 .service-cards {
     display: flex;
