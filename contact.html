@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfólio - Lucas Lucena</title>
     <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
 
     <div id="top-contact" >
         <nav>
-            <div>
+            <div class="menu-container"> <!-- Adicionei uma classe aqui -->
                 <ul class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -37,12 +37,71 @@
     <div id = "container-form">
         
         <div class="form-left">
-            <p>Formulário</p><!-- Conteúdo da primeira divisão -->
+            <h2>Contact Us</h2>
+            <p>Fill out the form to get in touch!</p>
+            <form action="#" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name..." required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@yourmail.com" required>
+                
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Title..." required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type Here..." rows="4" required></textarea>
+                
+                <button type="submit">Send Now</button>
+            </form>
         </div>
-        <div class="form-right">
-            <p>outras informçaões</p>
-            <!-- Conteúdo da segunda divisão -->
-        </div>
+
+
+        <!-- Informações de Contato -->
+        <div class="contact-right">
+            <p>
+                In tempus nisi turpis, et ultrices dui eleifend a. Quisque et quam vel nunc consectetur pharetra euismod et elit.
+                Morbi nibh tortor, ullamcorper id purus eu, rhoncus consequat velit.
+            </p>
+            <div class="contact-details">
+                <div class="row">
+                    <div>
+                        <div class="icon">
+                            <i class="fas fa-phone-alt"></i> <!-- Ícone de telefone -->
+                        </div>
+                        <h4>Phone Number</h4>
+                        <p>+55 (11)97828-5472</p>
+                    </div>
+                    <div>
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i> <!-- Ícone de e-mail -->
+                        </div>
+                        <h4>Email Address</h4>
+                        <p>lucaslucena.dev123@gmail.com</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div class="icon">
+                            <i class="fab fa-whatsapp"></i> <!-- Ícone do WhatsApp -->
+                        </div>
+                        <h4>Whatsapp</h4>
+                        <p>(11)97828-5472</p>
+                    </div>
+                    <div>
+                        <div class="icon">
+                            <i class="fas fa-building"></i> <!-- Ícone de prédio (escritório) -->
+                        </div>
+                        <h4>Residence</h4>
+                        <p>Barra do Garças - MT</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map">
+                <img src="https://via.placeholder.com/300x200" alt="Map Placeholder">
+            </div>
+        </div>        
         
     </div>
    
