@@ -91,7 +91,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Efeito opaco com 50% de transparência */
+    background-color: rgba(0, 0, 0, 0.4); /* Efeito opaco com 50% de transparência */
     z-index: 1;
 }
 
@@ -183,7 +183,6 @@ main {
 
 #about{
     background-color: #333;
-    padding-top: 50px;
 }
 
 .about-section {
@@ -192,7 +191,8 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    padding-top: 60px; 
+    padding-top: 5%; 
+    padding-bottom: 5%;
 }
 
 .about-section img {
@@ -429,11 +429,6 @@ footer p {
         height: 100vh;
         padding: 65px 0;
         width: 100%;
-    }
-
-    .perfil{
-        margin-left: 45px;
-        
     }
 
     .about-section{

@@ -111,6 +111,13 @@ button:hover {
     margin-bottom: 20px;
 }
 
+.row a:hover{
+    color: #f5a623;
+}
+.row a{
+    transition: color 0.3s ease;
+}
+
 .contact-details .row {
     display: flex;
     justify-content: space-between;
@@ -254,4 +261,6 @@ button:hover {
     .contact-details .row div {
         text-align: left; /* Alinha o texto à esquerda */
     }
+
+    
 }
