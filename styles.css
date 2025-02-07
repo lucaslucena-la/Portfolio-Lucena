@@ -59,7 +59,11 @@ nav {
     background-position: center;
     background-attachment: fixed; /* Efeito de paralaxe */
     background-repeat: no-repeat;
+    background-image: url('images/lucas-home.png');
+    background-position-y: 25%;
 }
+
+
 
 #home-contact {
     position: relative;
@@ -129,24 +133,9 @@ nav {
     transform: scale(1.2);
 }
 
-
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.container-service{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
 .text-section h1 {
     color: #f5a623;
-
+    
     font-size: 3rem;
     margin-bottom: 10px;
 }
@@ -160,6 +149,18 @@ nav {
     font-size: 1.2rem;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-service{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .btn {
     display: inline-block;
     padding: 5px 10px;
@@ -169,6 +170,7 @@ nav {
     border-radius: 25px;
     transition: background 0.3s ease;
     margin: 10px 0px;
+    margin-left: 2%;
 }
 
 .btn:hover {
@@ -201,7 +203,8 @@ main {
 
 .about-content {
     max-width: 800px;
-    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2.5%;
 }
 
 .SobreMim{
@@ -240,14 +243,17 @@ main {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); /* Aumenta a sombra para intensificar o efeito */
 }
 
-
-
 .skills {
     margin-top: 20px;
     display: flex;
     justify-content: center; /* Centraliza os itens no contêiner principal */
     flex-wrap: wrap;
     gap: 20px;
+    background-color: #393939;
+    margin: 5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
 }
 
 .skill-item {
@@ -279,7 +285,6 @@ main {
     margin-right: 3px;
 }
 
-
 #services {
     background-color: #282828;
     padding: 50px 0;
@@ -289,8 +294,6 @@ main {
     color: #f5a623;
     margin-bottom: 3%;
 }
-
-
 
 .service-cards {
     display: flex;
@@ -312,7 +315,6 @@ main {
     color: #f5a623;
     margin-bottom: 10px;
 }
-
 
 /*Style de projetos */
 #projects {
@@ -407,7 +409,6 @@ button.next { right: 10px; }
 button.prev:hover, button.next:hover {
     background: rgba(255, 165, 0, 0.8);
 }
-
 
 footer {
     text-align: center;
@@ -507,6 +508,17 @@ footer p {
         margin-right: -1.5%;
     }
     
+    #home {
+        background-size: cover;
+        background-position: center;    
+        background-position-x: 80%;
+    }
+
+    .text-section{
+        padding-top: 35%;
+    }
+
+
 
 
 
