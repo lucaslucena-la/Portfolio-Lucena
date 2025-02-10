@@ -59,7 +59,7 @@ nav {
     background-position: center;
     background-attachment: fixed; /* Efeito de paralaxe */
     background-repeat: no-repeat;
-    background-image: url('images/lucas-home.png');
+    background-image: url('images/fundo\ lucas-Cbranca.png');
     background-position-y: 25%;
 }
 
@@ -91,7 +91,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Efeito opaco com 50% de transparência */
+    background-color: rgba(0, 0, 0, 0.1); /* Efeito opaco com 50% de transparência */
     z-index: 1;
 }
 
