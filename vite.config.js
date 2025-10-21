@@ -1,16 +1,13 @@
-// No seu vite.config.js
-
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-// Importe 'path' para resolver caminhos absolutos
-import path from 'path'; 
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/', 
   resolve: {
     alias: {
-      // Esta linha mapeia o '@' para a pasta './src'
-      '@': path.resolve(__dirname, './src'), 
+      '@': path.resolve(__dirname, './src'),
     },
   },
-});
+})
