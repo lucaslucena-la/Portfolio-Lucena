@@ -6,29 +6,29 @@ const Skills = () => {
     {
       title: "Linguagens",
       skills: [
-        { name: "Python", level: 85 },
-        { name: "JavaScript", level: 80 },
-        { name: "TypeScript", level: 75 },
-        { name: "Java", level: 80 },
+        { name: "Python", level: 70 },
+        { name: "JavaScript", level: 70 },
+        { name: "TypeScript", level: 65 },
+        { name: "Java", level: 70 },
         { name: "C/C++", level: 70 }
       ]
     },
     {
       title: "Frameworks & Libraries",
       skills: [
-        { name: "Next.js", level: 80 },
-        { name: "React", level: 85 },
-        { name: "Node.js", level: 80 },
-        { name: "Spring Boot", level: 75 },
-        { name: "Django/Flask", level: 70 }
+        { name: "Next.js", level: 70 },
+        { name: "React", level: 65 },
+        { name: "Node.js", level: 75 },
+        { name: "Spring Boot", level: 65 },
+        { name: "Django/Flask", level: 65 }
       ]
     },
     {
       title: "Banco de Dados",
       skills: [
-        { name: "PostgreSQL", level: 80 },
+        { name: "PostgreSQL", level: 75 },
         { name: "MySQL", level: 75 },
-        { name: "SQLite", level: 70 }
+        { name: "SQLite", level: 60 }
       ]
     },
     {
@@ -36,7 +36,7 @@ const Skills = () => {
       skills: [
         { name: "Git", level: 85 },
         { name: "Docker", level: 65 },
-        { name: "AWS", level: 60 }
+        { name: "AWS", level: 50 }
       ]
     }
   ];

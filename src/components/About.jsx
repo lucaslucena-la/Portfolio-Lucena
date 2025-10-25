@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, Users, Zap } from 'lucide-react';
@@ -37,42 +36,53 @@ const About = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-12" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col gap-12 items-center">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="w-full max-w-4xl"
           >
-            <img 
-              className="w-full rounded-2xl shadow-2xl"
-              alt="Lucas trabalhando em projetos de desenvolvimento"
-             src="https://images.unsplash.com/photo-1603969409447-ba86143a03f6" />
+            <div className="aspect-video w-full rounded-2xl shadow-2xl overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              alt=""
+             src="/assets/images/about.jpeg" />
+            </div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="space-y-6"
-          >
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Sou Lucas Lucena, estudante de Ciência da Computação (UFMT) e desenvolvedor fullstack. Tenho experiência prática em Python, Java, C/C++, JavaScript e TypeScript, e já trabalhei em projetos que abrangem desde aplicações web a sistemas desktop.
-            </p>
+          <div className="grid md:grid-cols-2 gap-12 items-start w-full">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="space-y-6"
+            >
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Sou Lucas de Andrade Lucena, estudante de Ciência da Computação (UFMT) e desenvolvedor fullstack. Tenho experiência prática em Python, Java, C/C++, JavaScript e TypeScript, e já trabalhei em projetos que abrangem desde aplicações web a sistemas desktop.
+              </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Participei de hackathons, workshops e eventos de inovação — obtendo o 2º lugar no HackaMT 2024 — e liderei a startup Renda Verde em programas de pré-aceleração. Busco oportunidades para aplicar e expandir minhas habilidades em equipes colaborativas.
-            </p>
-
-            <div className="grid gap-4 pt-4">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Participei de hackathons, workshops e eventos de inovação — obtendo o 2º lugar no HackaMT 2024 — e liderei a startup Renda Verde em programas de pré-aceleração.
+              </p>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="grid gap-4 pt-4"
+            >
               {highlights.map((item, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
+                  transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
                   className="flex items-start gap-4 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100"
                 >
                   <div className="p-3 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600">
@@ -84,8 +94,8 @@ const About = () => {
                   </div>
                 </motion.div>
               ))}
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>

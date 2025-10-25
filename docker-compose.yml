@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  # Define o serviço do seu portfólio
+  portfolio:
+    # Nome da imagem que será criada. Deve ser o mesmo usado em 'docker build'
+    image: lucaslucena-portfolio:latest
+    
+    # Define o contexto e o Dockerfile para construir a imagem
+    build:
+      context: . 
+      dockerfile: Dockerfile
+      # A tag de build é opcional se você usar a tag no 'image' acima
+      # tags:
+      #   - lucaslucena-portfolio:latest
+
+    # Mapeia a porta 3000 do host para a porta 80 do container (NGINX)
+    ports:
+      - "3000:80"
+      
+    # Define o nome do container para fácil identificação
+    container_name: lucaslucena_portfolio_container
+    
+    # Política de restart: reinicia se o container parar, a menos que seja parado manualmente
+    restart: always
+
+    # Opcional: Volumes para desenvolvimento (se você quisesse fazer hot reload, o que é mais complexo com build multi-stage)
+    # volumes:
+    #   - .:/app
+    #   - /app/node_modules # Impede que o host sobrescreva o node_modules do container

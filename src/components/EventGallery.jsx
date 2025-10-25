@@ -4,32 +4,32 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const eventImages = [
   {
-    src: "/public/assets/images/Hacka (7).jpeg",
+    src: "/assets/images/Hacka (7).jpeg",
     alt: "Pessoas em uma conferência de tecnologia",
     description: "Participando de um workshop de inovação"
   },
   {
-    src: "/public/assets/images/Hacka (9).jpeg",
+    src: "/assets/images/Hacka (9).jpeg",
     alt: "Networking em um evento de tecnologia",
     description: "Conectando com outros desenvolvedores"
   },
   {
-    src: "/public/assets/images/hacka.jpeg",
+    src: "/assets/images/hacka.jpeg",
     alt: "Networking em um evento de tecnologia",
     description: "Conectando com outros desenvolvedores"
   },
   {
-    src: "/public/assets/images/startupday.png",
+    src: "/assets/images/startupday.png",
     alt: "Apresentação em um hackathon",
     description: "Apresentando projeto no HackaMT 2024"
   },
   {
-    src: "/public/assets/images/inova (1).jpeg",
+    src: "/assets/images/inova (1).jpeg",
     alt: "Equipe colaborando em um projeto",
     description: "Trabalho em equipe durante evento de programação"
   },
   {
-    src: "/public/assets/images/inova (2).jpeg",
+    src: "/assets/images/inova (2).jpeg",
     alt: "Equipe colaborando em um projeto",
     description: "Trabalho em equipe durante evento de programação"
   },

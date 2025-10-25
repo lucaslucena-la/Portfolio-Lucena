@@ -6,22 +6,29 @@ import { toast } from '@/components/ui/use-toast';
 
 const Hero = () => {
 
-
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-purple-600/10 to-pink-600/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800" />
       
       <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        {/* O grid principal agora é dividido em 3 blocos (em vez de 2).
+          Em telas MD+, o primeiro bloco (Header) ocupa as 2 colunas, 
+          e os blocos Foto e Corpo do Texto ficam lado a lado na linha de baixo.
+        */}
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          
+          {/* ========================================================== */}
+          {/* BLOCO 1: NOME E SUBTÍTULO (Ordem 1 em Mobile) */}
+          {/* ========================================================== */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-6"
+            className="space-y-4 md:space-y-6 md:col-span-2" // Ocupa a largura total no desktop
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -37,14 +44,47 @@ const Hero = () => {
               <span className="text-gradient">Lucas Lucena</span>
             </h1>
 
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-700">
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-200">
               Desenvolvedor • Estudante de Ciência da Computação
             </h2>
+          </motion.div>
 
-            <p className="text-lg text-gray-600 leading-relaxed">
+          {/* ========================================================== */}
+          {/* BLOCO 2: FOTO (Ordem 2 em Mobile) */}
+          {/* Em Desktop, forçamos para a última coluna (md:order-last) */}
+          {/* ========================================================== */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="relative md:order-last"
+          >
+            <div className="relative w-full aspect-square max-w-sm mx-auto">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full blur-3xl opacity-30 animate-pulse" />
+              <img 
+                className="relative z-10 w-full h-full object-cover rounded-full shadow-2xl border-8 border-[#001f3f]"
+                alt="Lucas de Andrade Lucena - Desenvolvedor Fullstack"
+                src="/assets/images/Lucena.png" 
+              />
+            </div>
+          </motion.div>
+
+          {/* ========================================================== */}
+          {/* BLOCO 3: CORPO DO TEXTO E AÇÕES (Ordem 3 em Mobile) */}
+          {/* Em Desktop, fica na primeira coluna da segunda linha */}
+          {/* ========================================================== */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="space-y-6"
+          >
+            {/* Parágrafo de descrição */}
+            <p className="text-lg text-gray-400 leading-relaxed">
               Desenvolvedor fullstack e estudante de Ciência da Computação. Crio aplicações e soluções digitais com foco em experiência do usuário e código de qualidade.
             </p>
 
+            {/* Botões */}
             <div className="flex flex-wrap gap-4 pt-4">
               <Button 
                 onClick={scrollToProjects}
@@ -56,54 +96,40 @@ const Hero = () => {
               </Button>
 
               <Button 
-                asChild // Faz o Button renderizar o seu filho (o <a>)
+                asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-600 text-blue-600 hover:bg-blue-50"
+                className="border-2 border-blue-600 text-blue-400 hover:bg-blue-950/20  hover:text-white "
               >
                 <a 
-                  href="/assets/cv/lucas_lucena_cv.pdf" // O caminho no diretório 'public'
-                  download // Atributo para forçar o download
-                  target="_blank" // Boa prática para links de download
+                  href="/assets/cv/lucas_lucena_cv.pdf"
+                  download
+                  target="_blank"
                 >
                   <Download className="mr-2 h-4 w-4" />
                   Baixar Currículo
                 </a>
               </Button>
             </div>
-
+            
+            {/* Links Sociais */}
             <div className="flex gap-4 pt-4">
               <a 
                 href="https://github.com/lucaslucena-la" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-3 rounded-full bg-gray-100 hover:bg-blue-100 transition-colors"
+                className="p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
               >
-                <Github className="h-6 w-6 text-gray-700" />
+                <Github className="h-6 w-6 text-gray-300" />
               </a>
               <a 
                 href="https://www.linkedin.com/in/lucaslucenadev" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-3 rounded-full bg-gray-100 hover:bg-blue-100 transition-colors"
+                className="p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
               >
-                <Linkedin className="h-6 w-6 text-gray-700" />
+                <Linkedin className="h-6 w-6 text-gray-300" />
               </a>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative"
-          >
-            <div className="relative w-full aspect-square max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full blur-3xl opacity-30 animate-pulse" />
-              <img 
-                className="relative z-10 w-full h-full object-cover rounded-full shadow-2xl border-8 border-white"
-                alt="Lucas de Andrade Lucena - Desenvolvedor Fullstack"
-               src="/public/assets/images/Lucas.jpg" />
             </div>
           </motion.div>
         </div>
@@ -119,7 +145,7 @@ const Hero = () => {
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
         >
-          <ArrowDown className="h-8 w-8 text-blue-600" />
+          <ArrowDown className="h-8 w-8 text-blue-400" />
         </motion.div>
       </motion.div>
     </section>

@@ -17,7 +17,7 @@ const Projects = () => {
         "Interface moderna e responsiva",
         "Gerenciamento de eventos e convidados"
       ],
-      github: "https://github.com/lucaslucena-la/convit3-digital",
+      github: "https://github.com/lucaslucena-la/projeto-convit3-digital",
       demo: null,
       image: "Modern event invitation platform with elegant design"
     },
@@ -30,7 +30,7 @@ const Projects = () => {
         "Sistema de pedidos em tempo real",
         "Integração com pagamentos"
       ],
-      github: "https://github.com/lucaslucen-la/flashfood",
+      github: "https://github.com/lucaslucena-la/FlashFood",
       demo: null,
       image: "Food delivery app interface with restaurant listings"
     },
@@ -43,7 +43,7 @@ const Projects = () => {
         "CRUD completo de posts",
         "Containerização com Docker"
       ],
-      github: "https://github.com/lucaslucena-la/blog-system",
+      github: "https://github.com/lucaslucena-la/system_blog",
       demo: null,
       image: "Blog management system dashboard"
     },
@@ -56,7 +56,7 @@ const Projects = () => {
         "Controle de estoque e produtos",
         "Relatórios e dashboards"
       ],
-      github: "https://github.com/lucaslucena-la/sistema-vendas",
+      github: "https://github.com/lucaslucena-la/Sistema-de-Vendas",
       demo: null,
       image: "Sales management system with charts and analytics"
     },
@@ -69,7 +69,7 @@ const Projects = () => {
         "Sistema de pontuação e ranking",
         "Interface gráfica intuitiva"
       ],
-      github: "https://github.com/lucaslucena-la/quiz-educacional",
+      github: "https://github.com/lucaslucena-la/Quiz-java",
       demo: null,
       image: "Educational quiz application with colorful interface"
     },
@@ -82,7 +82,7 @@ const Projects = () => {
         "Visualizações interativas",
         "Machine Learning básico"
       ],
-      github: "https://github.com/lucaslucena-la/data-science",
+      github: "https://github.com/lucaslucena-la/Data_science",
       demo: null,
       image: "Data visualization dashboard with charts and graphs"
     }

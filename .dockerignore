@@ -1,0 +1,15 @@
+# Ignorar dependências
+node_modules
+npm-debug.log
+.npm
+
+# Ignorar arquivos do Docker/IDE
+.dockerignore
+Dockerfile
+.git
+.gitignore
+.vscode/
+
+# Ignorar o ambiente local (Windows/WSL)
+.env
+.DS_Store
