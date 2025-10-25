@@ -38,7 +38,7 @@ const Hero = () => {
             </h1>
 
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-700">
-              Desenvolvedor Fullstack • Estudante de Ciência da Computação
+              Desenvolvedor • Estudante de Ciência da Computação
             </h2>
 
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -74,7 +74,7 @@ const Hero = () => {
 
             <div className="flex gap-4 pt-4">
               <a 
-                href="https://github.com/lucaslucena" 
+                href="https://github.com/lucaslucena-la" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-gray-100 hover:bg-blue-100 transition-colors"
@@ -82,7 +82,7 @@ const Hero = () => {
                 <Github className="h-6 w-6 text-gray-700" />
               </a>
               <a 
-                href="https://linkedin.com/in/lucaslucena" 
+                href="https://www.linkedin.com/in/lucaslucenadev" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-gray-100 hover:bg-blue-100 transition-colors"
@@ -103,7 +103,7 @@ const Hero = () => {
               <img 
                 className="relative z-10 w-full h-full object-cover rounded-full shadow-2xl border-8 border-white"
                 alt="Lucas de Andrade Lucena - Desenvolvedor Fullstack"
-               src="https://images.unsplash.com/photo-1618927376995-a721da8c11db" />
+               src="/public/assets/images/Lucas.jpg" />
             </div>
           </motion.div>
         </div>

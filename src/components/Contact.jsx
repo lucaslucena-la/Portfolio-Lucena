@@ -15,7 +15,7 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "🚧 Funcionalidade em desenvolvimento",
-      description: "O envio de mensagens estará disponível em breve! Você pode solicitar essa implementação no próximo prompt! 🚀",
+      description: "O envio de mensagens estará disponível em breve!",
     });
   };
 
@@ -67,7 +67,7 @@ const Contact = () => {
                 </a>
 
                 <a 
-                  href="https://github.com/lucaslucena"
+                  href="https://github.com/lucaslucena-la"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 text-white hover:text-blue-200 transition-colors"
@@ -77,12 +77,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-white/80">GitHub</p>
-                    <p className="font-semibold">github.com/lucaslucena</p>
+                    <p className="font-semibold">github.com/lucaslucena-la</p>
                   </div>
                 </a>
 
                 <a 
-                  href="https://linkedin.com/in/lucaslucena"
+                  href="https://linkedin.com/in/lucaslucenadev"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 text-white hover:text-blue-200 transition-colors"
@@ -92,7 +92,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-white/80">LinkedIn</p>
-                    <p className="font-semibold">linkedin.com/in/lucaslucena</p>
+                    <p className="font-semibold">linkedin.com/in/lucaslucenadev</p>
                   </div>
                 </a>
               </div>

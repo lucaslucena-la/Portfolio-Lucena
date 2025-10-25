@@ -51,7 +51,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Conecte-se</h4>
             <div className="flex gap-4 mb-4">
               <a 
-                href="https://github.com/lucaslucena"
+                href="https://github.com/lucaslucena-la"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-800 rounded-lg hover:bg-blue-600 transition-colors"
@@ -59,7 +59,7 @@ const Footer = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a 
-                href="https://linkedin.com/in/lucaslucena"
+                href="https://linkedin.com/in/lucaslucenadev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-800 rounded-lg hover:bg-blue-600 transition-colors"

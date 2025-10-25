@@ -30,7 +30,7 @@ const Projects = () => {
         "Sistema de pedidos em tempo real",
         "Integração com pagamentos"
       ],
-      github: "https://github.com/lucaslucena/flashfood",
+      github: "https://github.com/lucaslucen-la/flashfood",
       demo: null,
       image: "Food delivery app interface with restaurant listings"
     },
@@ -43,7 +43,7 @@ const Projects = () => {
         "CRUD completo de posts",
         "Containerização com Docker"
       ],
-      github: "https://github.com/lucaslucena/blog-system",
+      github: "https://github.com/lucaslucena-la/blog-system",
       demo: null,
       image: "Blog management system dashboard"
     },
@@ -56,7 +56,7 @@ const Projects = () => {
         "Controle de estoque e produtos",
         "Relatórios e dashboards"
       ],
-      github: "https://github.com/lucaslucena/sistema-vendas",
+      github: "https://github.com/lucaslucena-la/sistema-vendas",
       demo: null,
       image: "Sales management system with charts and analytics"
     },
@@ -69,7 +69,7 @@ const Projects = () => {
         "Sistema de pontuação e ranking",
         "Interface gráfica intuitiva"
       ],
-      github: "https://github.com/lucaslucena/quiz-educacional",
+      github: "https://github.com/lucaslucena-la/quiz-educacional",
       demo: null,
       image: "Educational quiz application with colorful interface"
     },
@@ -82,7 +82,7 @@ const Projects = () => {
         "Visualizações interativas",
         "Machine Learning básico"
       ],
-      github: "https://github.com/lucaslucena/data-science",
+      github: "https://github.com/lucaslucena-la/data-science",
       demo: null,
       image: "Data visualization dashboard with charts and graphs"
     }
@@ -103,7 +103,7 @@ const Projects = () => {
   const handleDemo = () => {
     toast({
       title: "🚧 Demo em desenvolvimento",
-      description: "A demonstração ao vivo estará disponível em breve! Você pode solicitar essa implementação no próximo prompt! 🚀",
+      description: "A demonstração ao vivo estará disponível em breve!",
     });
   };
 
