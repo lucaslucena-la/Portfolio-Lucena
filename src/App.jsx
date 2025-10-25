@@ -15,8 +15,8 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>LucasLucena - Desenvolvedor</title>
-        <meta name="description" content="Portfólio de Lucas de Andrade Lucena, desenvolvedor fullstack e estudante de Ciência da Computação. Especializado em Next.js, React, Node.js, Python e Java." />
+        <title>Lucas Lucena - Desenvolvedor</title>
+        <meta name="description" content="Portfólio de Lucas Lucena, desenvolvedor fullstack e estudante de Ciência da Computação. Especializado em Next.js, React, Node.js, Python e Java." />
         <meta property="og:title" content="Lucas Lucena - Desenvolvedor" />
         <meta property="og:description" content="Desenvolvedor fullstack com experiência em aplicações web modernas e sistemas backend robustos." />
         <meta property="og:type" content="website" />
