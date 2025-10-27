@@ -4,6 +4,9 @@ import { Mail, Send, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
 
+import emailjs from "emailjs-com";
+
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -13,9 +16,28 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast({
-      title: "🚧 Funcionalidade em desenvolvimento",
-      description: "O envio de mensagens estará disponível em breve!",
+    emailjs.send(
+      "lucena_service",
+      "template_8kn5673",
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message
+      },
+      "nn3ISwkX5bOGhu82k"
+    ).then(() => {
+      toast({
+          title: "✅ Mensagem enviada com sucesso!",
+          description: "Entrarei em contato em breve.",
+      });
+      setFormData({ name: "", email: "", message: "" });
+
+    }).catch((error) => {
+      toast({
+          title: "❌ Erro ao enviar mensagem",
+        description: "Ocorreu um erro ao enviar sua mensagem. Tente novamente mais tarde.",
+      });
+      console.error("Erro:", error);
     });
   };
 

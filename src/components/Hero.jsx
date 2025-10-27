@@ -35,9 +35,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <span className="inline-block px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full text-sm font-semibold mb-4">
-                Disponível para trabalho remoto
-              </span>
+
             </motion.div>
 
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
